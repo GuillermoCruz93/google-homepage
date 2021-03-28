@@ -60,18 +60,17 @@ a, a:hover, a:visited {
 }
 
 .header {
-  position: absolute;
+  position: fixed;
   padding: 1rem;
   font-size: .9rem;
   width: 100vw;
 }
 
-.header__links {
+.header__link {
   margin-right: 2rem;
 }
 
-.header__links > a {
-  color: #1f1f1f;
+.header__link > a {
   margin: 0rem .5rem;
 }
 
