@@ -1,7 +1,5 @@
 .contend {
-    position: relative;
-    display: grid;
-    grid-template-rows: repeat(12, 1fr);
+    
     justify-items: center;
     height: 100%;
     width: 100vw;
@@ -9,11 +7,9 @@
 }
 
 .google__img {
-    grid-row: 5/6;
 }
 
 .fb {
-    grid-row: 6/7;
     border: solid 1px rgb(206, 203, 203);
     border-radius: 50px;
     width: 38vw;
@@ -49,8 +45,6 @@
 
 .botones {
     width: 100%;
-    grid-row: 7/8;
-
 
     &__1 {
         padding: .5em 1em;
@@ -74,7 +68,4 @@
 }
 
 .google__text {
-    grid-row: 8/9;
-    align-self: start;
-
-}
+    }

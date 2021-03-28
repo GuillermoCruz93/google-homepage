@@ -17,11 +17,22 @@ body {
   margin: 0;
   width: 100vw;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+  min-height: 100vh;
 }
 
-a, a:hover, a:visited {
+a,
+a:hover,
+a:visited {
   text-decoration: none;
-  color: #3c3c3c;
+  color: #70757a;
 }
 
 .flex {
@@ -33,6 +44,12 @@ a, a:hover, a:visited {
 .flex-jc-sa {
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .flex-jc-c {
@@ -74,6 +91,10 @@ a, a:hover, a:visited {
   margin: 0rem .5rem;
 }
 
+.header__link > a:hover {
+  text-decoration: underline;
+}
+
 .header__apps > img {
   width: 1.6rem;
   height: 1.6rem;
@@ -87,11 +108,6 @@ a, a:hover, a:visited {
 }
 
 .contend {
-  position: relative;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: (1fr)[12];
-      grid-template-rows: repeat(12, 1fr);
   justify-items: center;
   height: 100%;
   width: 100vw;
@@ -101,16 +117,7 @@ a, a:hover, a:visited {
           flex-direction: column;
 }
 
-.google__img {
-  -ms-grid-row: 5;
-  -ms-grid-row-span: 1;
-  grid-row: 5/6;
-}
-
 .fb {
-  -ms-grid-row: 6;
-  -ms-grid-row-span: 1;
-  grid-row: 6/7;
   border: solid 1px #cecbcb;
   border-radius: 50px;
   width: 38vw;
@@ -145,9 +152,6 @@ a, a:hover, a:visited {
 
 .botones {
   width: 100%;
-  -ms-grid-row: 7;
-  -ms-grid-row-span: 1;
-  grid-row: 7/8;
 }
 
 .botones__1 {
@@ -170,12 +174,25 @@ a, a:hover, a:visited {
           box-shadow: 1px 1px gray;
 }
 
-.google__text {
-  -ms-grid-row: 8;
-  -ms-grid-row-span: 1;
-  grid-row: 8/9;
-  -ms-flex-item-align: start;
-      -ms-grid-row-align: start;
-      align-self: start;
+.footer {
+  border-top: solid 1px #cfc3c3;
+  padding: 1rem;
+  font-size: .875rem;
+}
+
+.footer__1 > a {
+  margin-left: 1rem;
+}
+
+.footer__1 > a:hover {
+  text-decoration: underline;
+}
+
+.footer__2 > a {
+  margin-right: 1rem;
+}
+
+.footer__2 > a:hover {
+  text-decoration: underline;
 }
 /*# sourceMappingURL=style.css.map */

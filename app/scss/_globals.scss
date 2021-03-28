@@ -15,11 +15,18 @@ body {
     margin: 0;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+
 }
 
-a, a:hover, a:visited{
-   text-decoration: none;
-    color: rgb(60, 60, 60);
+a,
+a:hover,
+a:visited {
+    text-decoration: none;
+    color: #70757a;
 }
 
 //FlexBox
@@ -30,6 +37,10 @@ a, a:hover, a:visited{
         justify-content: space-around;
     }
 
+    &-jc-sb {
+        justify-content: space-between;
+    }
+
     &-jc-c {
         justify-content: center;
     }
@@ -38,11 +49,11 @@ a, a:hover, a:visited{
         align-items: center;
     }
 
-    &-ai-fs{
+    &-ai-fs {
         align-items: flex-start;
     }
 
-    &-jc-end{
+    &-jc-end {
         justify-content: flex-end;
     }
 }
