@@ -19,14 +19,15 @@ body {
 
 a, a:hover, a:visited{
     text-decoration: none;
+    color: rgb(60, 60, 60);
 }
 
 //FlexBox
 .flex {
     display: flex;
 
-    &-jc-sb {
-        justify-content: space-between;
+    &-jc-sa {
+        justify-content: space-around;
     }
 
     &-jc-c {

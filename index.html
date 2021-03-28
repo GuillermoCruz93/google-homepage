@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/app/scss/style.css">
     <title>Google</title>
 </head>
@@ -19,15 +19,37 @@
                 <a href="#">Imagenes</a>
             </div>
 
-            <a href="#" class="header__apps"><img src="https://image.flaticon.com/icons/png/128/149/149017.png" alt="Apps"></a>
+            <a href="#" class="header__apps"><img src="https://image.flaticon.com/icons/png/128/149/149017.png"
+                    alt="Apps"></a>
 
-            <a href="#" class="header__user"><img src="https://lh3.googleusercontent.com/ogw/ADGmqu_VRL0BDR-g6DWkWPHwJwyS53VEARln2_lkzRz9=s32-c-mo" alt="user"></a>
+            <a href="#" class="header__user"><img
+                    src="https://lh3.googleusercontent.com/ogw/ADGmqu_VRL0BDR-g6DWkWPHwJwyS53VEARln2_lkzRz9=s32-c-mo"
+                    alt="user"></a>
         </nav>
     </header>
 
-    <div class="contend">
-        <a href="#"><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+    <div class="contend flex flex-ai-c flex-jc-c ">
+        <a href="#" class="google__img"><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
                 alt="Google"></a>
+
+        <div class="fb flex flex-ai-c">
+            <form class="fb__form flex" action="#" method="POST">
+                <img class="icon__search" src="https://image.flaticon.com/icons/png/128/149/149852.png" alt="search">
+                
+                    <input class="fb__input" type="search" placeholder="Busqueda">
+                
+                <img class="icon__micro" src="https://image.flaticon.com/icons/png/128/37/37571.png"
+                        alt="microfono">
+            </form>
+
+        </div>
+
+        <div class="botones flex flex-jc-sa">
+            <a class="botones__1" href="#">Buscar con Google</a>
+            <a class="botones__2" href="#">Me siento con suerte</a>
+        </div>
+
+        <p class="google__text">Ofrecido por google en: <a href="#">English</a></p>
 
     </div>
 
@@ -36,4 +58,5 @@
     </footer>
 </body>
 <script src="/app/js/scripts.js"></script>
+
 </html>

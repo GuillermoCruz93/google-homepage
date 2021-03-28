@@ -21,6 +21,7 @@ body {
 
 a, a:hover, a:visited {
   text-decoration: none;
+  color: #3c3c3c;
 }
 
 .flex {
@@ -29,10 +30,9 @@ a, a:hover, a:visited {
   display: flex;
 }
 
-.flex-jc-sb {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.flex-jc-sa {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .flex-jc-c {
@@ -60,8 +60,10 @@ a, a:hover, a:visited {
 }
 
 .header {
+  position: absolute;
   padding: 1rem;
   font-size: .9rem;
+  width: 100vw;
 }
 
 .header__links {
@@ -69,7 +71,7 @@ a, a:hover, a:visited {
 }
 
 .header__links > a {
-  color: black;
+  color: #1f1f1f;
   margin: 0rem .5rem;
 }
 
@@ -83,5 +85,98 @@ a, a:hover, a:visited {
   width: 2.3rem;
   height: 2.3rem;
   border-radius: 50px;
+}
+
+.contend {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[12];
+      grid-template-rows: repeat(12, 1fr);
+  justify-items: center;
+  height: 100%;
+  width: 100vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.google__img {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  grid-row: 5/6;
+}
+
+.fb {
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 1;
+  grid-row: 6/7;
+  border: solid 1px #cecbcb;
+  border-radius: 50px;
+  width: 38vw;
+  height: 2.525rem;
+}
+
+.fb:hover {
+  -webkit-box-shadow: 1px 2px black;
+          box-shadow: 1px 2px black;
+}
+
+.fb__form {
+  width: 100%;
+}
+
+.fb__form > .icon__search {
+  margin-left: .5rem;
+}
+
+.fb__form > .icon__micro {
+  margin-right: .5rem;
+}
+
+.fb__form > img {
+  height: 20px;
+}
+
+.fb__input {
+  width: 100%;
+  border: none;
+}
+
+.botones {
+  width: 100%;
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 1;
+  grid-row: 7/8;
+}
+
+.botones__1 {
+  padding: .5em 1em;
+  border-radius: 50px;
+}
+
+.botones__1:hover {
+  -webkit-box-shadow: 1px 1px gray;
+          box-shadow: 1px 1px gray;
+}
+
+.botones__2 {
+  padding: .5em 1em;
+  border-radius: 50px;
+}
+
+.botones__2:hover {
+  -webkit-box-shadow: 1px 1px gray;
+          box-shadow: 1px 1px gray;
+}
+
+.google__text {
+  -ms-grid-row: 8;
+  -ms-grid-row-span: 1;
+  grid-row: 8/9;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
 }
 /*# sourceMappingURL=style.css.map */
